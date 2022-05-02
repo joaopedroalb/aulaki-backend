@@ -1,0 +1,20 @@
+[
+    {
+        "id":1,
+        "title":"Aprenda logica de programação",
+        "remoto":true,
+        "teacher_id":1,
+        "tags":[
+            "Programação","Java","Online"
+        ]
+    },
+    {
+        "id":2,
+        "title":"Aula de português",
+        "remoto":false,
+        "teacher_id":5,
+        "tags":[
+            "Português","Escola","Presencial"
+        ]
+    }
+]
