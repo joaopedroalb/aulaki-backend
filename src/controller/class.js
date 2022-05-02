@@ -1,5 +1,4 @@
 const lstClasses = require("../db/classes.json")
-const lstTeachers = require("../db/teachers.json")
 
 const getAll = (title) =>{
     if(!title)
