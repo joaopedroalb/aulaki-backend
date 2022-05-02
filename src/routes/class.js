@@ -1,29 +1,33 @@
 const router = require('express').Router()
 
+const lstClasses = require("../db/classes.json")
+
+const {getAll,getById,getByTeacher,getTags} = require("../controller/class")
+
 router.get('/',async(req,res)=>{
     const {title} = req.query
 
     if(!title){
-        res.send({'result':'aqui vai todas as aulas'}) 
+        res.send(getAll(title)) 
     }else{
-        res.send({'result':`aqui vai as aulas filtradas com o titulo contendo ${title}`})
+        res.send(getAll(title))
     }
 })
 
 router.get('/search/:id', async(req,res)=>{
     const {id} = req.params
 
-    res.send({'result':`aqui vai a aula com o id igual a ${id}`})
+    res.send(getById(id))
 })
 
 router.get('/teacher/:id', async(req,res)=>{
     const {id} = req.params
 
-    res.send({'result':`aqui vai retornar as aulas do professor com id ${id}`})
+    res.send(getByTeacher(id))
 })
 
 router.get('/tag', async(req,res)=>{
-    res.send({'result':'essa rota vai retornar as tags mais usadas entre todas as aulas sendo no max 10 e no minimo 2'})
+    res.send(getTags())
 })
 
 module.exports = router
