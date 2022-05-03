@@ -1,21 +1,52 @@
 const lstTeachers = require("../db/teachers.json")
 
-const getAll = (name,city) =>{
-    if(!name && !city)
-        return lstTeachers
-    if(!city)
-        return lstTeachers.filter(x=>x.name.toLowerCase().includes(name.toLowerCase()))
-    if(!name)
-        return lstTeachers.filter(x=>x.city.toLowerCase().includes(city.toLowerCase()))
+const getAll = (req,res) =>{
+    const {name,city} = req.query
+    try{
+        if(!name && !city)
+            return res.send(lstTeachers)
+
+        if(!city){
+            const lstResult = lstTeachers.filter(x=>x.name.toLowerCase().includes(name.toLowerCase()))
+
+            if(lstResult.length<=0) throw{error:"MISSING NAME"}
+
+            return res.send(lstResult)
+        }
+            
+        if(!name){
+            const lstResult = lstTeachers.filter(x=>x.city.toLowerCase().includes(city.toLowerCase()))
+
+            if(lstResult.length<=0) throw{error:"MISSING CITY"}
+
+            return res.send(lstResult)
+        }
+
+        const lstResult = lstTeachers.filter(x=>x.name.toLowerCase().includes(name.toLowerCase()) && 
+                                                x.city.toLowerCase().includes(city.toLowerCase()))
+
+        if(lstResult.length<=0)throw{error:"MISSING WITH CITY AND NAME PARAMS"}
     
-        return lstTeachers.filter(x=>x.name.toLowerCase().includes(name.toLowerCase()) && 
-                                        x.city.toLowerCase().includes(x.city.toLowerCase()))
+        return res.send(lstResult)
+
+    }catch(e){
+        res.status(404).send(e);
+    }
     
         
 }
 
-const getById = (id) =>{
-    return lstTeachers.filter(x=>x.id==id)
+const getById = (req,res) =>{
+    const {id} = req.params
+    try{
+        if(lstTeachers.filter(x=>x.id==id).length<=0)throw{error:"MISSING WITH ID"} 
+        
+        res.send(lstTeachers.filter(x=>x.id==id)[0])
+
+    }catch(e){
+
+        res.status(404).send(e)
+    }
 }
 
 const getCity = () =>{
