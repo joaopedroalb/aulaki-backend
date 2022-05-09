@@ -2,7 +2,7 @@
     {
         "id":1,
         "title":"Aprenda logica de programação",
-        "remoto":true,
+        "isRemote":true,
         "teacher_id":1,
         "tags":[
             "Programação","Java","Online"
@@ -11,10 +11,109 @@
     {
         "id":2,
         "title":"Aula de português",
-        "remoto":false,
+        "isRemote":false,
         "teacher_id":5,
         "tags":[
             "Português","Escola","Presencial"
+        ]
+    },
+    {
+        "id":3,
+        "title":"Aula de Ingles",
+        "isRemote":true,
+        "teacher_id":7,
+        "tags":[
+            "Ingles","Escola","Remoto","Linguas"
+        ]
+    }
+    ,
+    {
+        "id":4,
+        "title":"Javascript do zero",
+        "isRemote":true,
+        "teacher_id":2,
+        "tags":[
+            "Javascript","Programação","Remoto"
+        ]
+    }
+    ,
+    {
+        "id":5,
+        "title":"Gastronomia para leigos",
+        "isRemote":false,
+        "teacher_id":3,
+        "tags":[
+            "Gastronomia","Cozinha","Presencial"
+        ]
+    }
+    ,
+    {
+        "id":6,
+        "title":"Java + POO",
+        "isRemote":true,
+        "teacher_id":1,
+        "tags":[
+            "Java","Programação","Remoto","Poo"
+        ]
+    }
+    ,
+    {
+        "id":7,
+        "title":"Historia e Geografia",
+        "isRemote":true,
+        "teacher_id":8,
+        "tags":[
+            "Historia","Escola","Remoto","Geografia"
+        ]
+    }
+    ,
+    {
+        "id":8,
+        "title":"Python para machine learning",
+        "isRemote":true,
+        "teacher_id":10,
+        "tags":[
+            "Python","Programação","Remoto","Machine Learling","IA"
+        ]
+    }
+    ,
+    {
+        "id":9,
+        "title":"Principios da metodologia agil",
+        "isRemote":false,
+        "teacher_id":10,
+        "tags":[
+            "Scrum","Programação","Presencial","Agiles"
+        ]
+    }
+    ,
+    {
+        "id":10,
+        "title":"Aula de violão",
+        "isRemote":false,
+        "teacher_id":5,
+        "tags":[
+            "Musica","Violao","Presencial"
+        ]
+    }
+    ,
+    {
+        "id":11,
+        "title":"Matematica para leigos",
+        "isRemote":false,
+        "teacher_id":5,
+        "tags":[
+            "Matematica","Escola","Presencial"
+        ]
+    }
+    ,
+    {
+        "id":12,
+        "title":"Aula de Frances",
+        "isRemote":false,
+        "teacher_id":4,
+        "tags":[
+            "Frances","Linguas","Presencial"
         ]
     }
 ]

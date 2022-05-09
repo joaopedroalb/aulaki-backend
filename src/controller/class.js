@@ -38,13 +38,14 @@ const getTags = () =>{
         }
     }
 
-    aux.sort((a,b)=>a.numbers - b.numbers)
+    aux.sort((a,b)=>b.numbers - a.numbers)
 
     tags = []
 
     for(var index in aux){
-        if(index<=10)
-            tags.push(aux[index].name)
+        const item = aux[index].name
+        if(tags.indexOf(item) == -1 && tags.length<10)
+            tags.push(item)
     }
 
     return tags
