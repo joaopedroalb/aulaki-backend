@@ -44,4 +44,4 @@ Eu escolhi fazer um site chamado aulaki, onde basicamente ele iria ser um site p
 
 - Retorna uma **lista de strings** com o nome das **10** **tags** mais usadas entre todas as aulas
 
-#OBS: Os dados são mocks como arquivos json na pasta DB do projeto
+# OBS: Os dados são mocks como arquivos json na pasta DB do projeto
