@@ -3,61 +3,91 @@
         "id":1,
         "name":"Carlos Zageroko Fiol",
         "nickname":"Carlos",
-        "city":"São Paulo"
+        "city":"São Paulo",
+        "phone":"85999999999",
+        "pathImage":"https://randomuser.me/api/portraits/men/27.jpg",
+        "facebook":"https://www.facebook.com/"
     },
     {
         "id":2,
         "name":"Alice Vohon Lius",
         "nickname":"Alice",
-        "city":"São Paulo"
+        "city":"São Paulo",
+        "phone":"85999999999",
+        "pathImage":"https://randomuser.me/api/portraits/women/0.jpg",
+        "facebook":"https://www.facebook.com/"
     },
     {
         "id":3,
         "name":"Alfonso Noaus Bears",
         "nickname":"Noaus",
-        "city":"São Paulo"
+        "city":"São Paulo",
+        "phone":"85999999999",
+        "pathImage":"https://randomuser.me/api/portraits/men/70.jpg",
+        "facebook":"https://www.facebook.com/"
     },
     {
         "id":4,
         "name":"Amanda Bears Loyes",
         "nickname":"Amanda",
-        "city":"Fortaleza"
+        "city":"Fortaleza",
+        "phone":"85999999999",
+        "pathImage":"https://randomuser.me/api/portraits/women/2.jpg",
+        "facebook":"https://www.facebook.com/"
     },
     {
         "id":5,
         "name":"Paulo Faido Coeso",
         "nickname":"Paulo",
-        "city":"Fortaleza"
+        "city":"Fortaleza",
+        "phone":"85999999999",
+        "pathImage":"",
+        "facebook":"https://www.facebook.com/"
     },
     {
         "id":6,
         "name":"Maria Clara Sione Baxelar",
         "nickname":"Maria Clara",
-        "city":"Belo Horizonte"
+        "city":"Belo Horizonte",
+        "phone":"85999999999",
+        "pathImage":"https://randomuser.me/api/portraits/women/4.jpg",
+        "facebook":"https://www.facebook.com/"
     },
     {
         "id":7,
         "name":"Edson Caolu Alsos",
         "nickname":"Edson",
-        "city":"Rio de Janeiro"
+        "city":"Rio de Janeiro",
+        "phone":"85999999999",
+        "pathImage":"https://randomuser.me/api/portraits/men/23.jpg",
+        "facebook":"https://www.facebook.com/"
     },
     {
         "id":8,
         "name":"Giulia Dapas Biruy",
         "nickname":"Giulia",
-        "city":"Sobral"
+        "city":"Sobral",
+        "phone":"85999999999",
+        "pathImage":"https://randomuser.me/api/portraits/women/13.jpg",
+        "facebook":"https://www.facebook.com/"
     },
     {
         "id":9,
         "name":"Marcelo Coelho Mudos",
         "nickname":"Marcelo",
-        "city":"Manaus"
+        "city":"Manaus",
+        "phone":"85999999999",
+        "pathImage":"",
+        "facebook":"https://www.facebook.com/"
     },
     {
         "id":10,
         "name":"Arthur de Sá Ruze",
         "nickname":"Arthur",
-        "city":"Curitiba"
+        "city":"Curitiba",
+        "phone":"85999999999",
+        "pathImage":"https://randomuser.me/api/portraits/men/24.jpg",
+        "facebook":"https://www.facebook.com/"
     }
     
 ]
